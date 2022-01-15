@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Rosario:wght@700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+}
+
+h2 {
+    font-family: 'Rosario', sans-serif;
+    font-weight: 700;
+    font-size: 70px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1270px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+header {
+    padding: 50px 0 43px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-link {
+    font-weight: 400;
+    font-size: 18px;
+    color: #222;
+    margin-right: 40px;
+    position: relative;
+}
+
+.menu-link:before {
+    content: "";
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background: #09A66D;
+    height: 2px;
+    transform: scale(0);
+    transition: 0.6s;
+}
+
+.menu-link:hover:before {
+    transform: scale(1);
+}
+
+.menu-link:last-child {
+    margin-right: 0;
+}
+
+.nav-link-reg {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #fff;
+    padding: 10px 23px;
+    background: #09A66D;
+    border-radius: 8px;
+    margin-left: 32px;
+}
+
+.nav-link-reg:hover {
+    background: #13c783;
+}
+
+.header-nav {
+    display: flex;
+
+}
+
+.circle-link {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #F3FBF8;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.circle-link:hover {
+    background: #a6cebe;
+}
+.hero{
+    background: #F3FBF8;
+    text-align: center;
+    padding-top: 93px;
+
+}
+.hero .container{
+    position: relative;
+}
+.title{
+    margin-bottom: 20px;
+}
+.desc{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #555555;
+    margin-bottom: 40px;
+}
+.order-arrow-title{
+    font-weight: 500;
+    font-size: 18px;
+    color: #222222;
+
+}
+.open-arrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.open-arrow-title{
+    color: #222222;
+}
+.arrow-circle{
+    width: 64px;
+    height: 64px;
+    border-radius: 50px;
+    background: #09A66D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+.open-arrow:hover .arrow-circle{
+    color: red;
+    background: #13c783;
+}
+
+.img-hero{
+    display: block;
+    text-align: left;
+}
+.foliage-img{
+    position: absolute;
+    top: -130px;
+    left: -85px;
+}
