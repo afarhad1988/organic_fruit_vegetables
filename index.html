@@ -20,15 +20,15 @@
 <header>
 	<div class="container header-container">
 		<div class="menu">
-			<a  href="#home" class="menu-link">About Us</a>
+			<a href="#home" class="menu-link">About Us</a>
 			<a href="#service" class="menu-link">Service</a>
-			<a href="#menu" class="menu-link">Menu</a>
+			<a href="#special-item" class="menu-link">Menu</a>
 			<a href="#contact" class="menu-link">Contact</a>
 		</div>
 		<div class="burger">
 			<i class='bx bx-menu'></i>
 		</div>
-		<img src="./images/logo.png" alt="logo" class="logo-img">
+		<a class="logo-link" href="#"><img src="./images/logo.png" alt="logo" class="logo-img"></a>
 		<nav class="header-nav">
 			<a class="nav-link" href="#">
 				<div class="circle-link"><img src="./images/svg/Search.svg" alt="search"></div>
@@ -44,10 +44,12 @@
 <section id="home" class="hero">
 	<div class="container">
 		<h2 class="title">Organic Fruit & Vegetables</h2>
-		<p class="desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br> Lorem Ipsum has
-			been
-			the
-			industry's standard dummy text ever since the <br> 1500s, when an unknown printer took a galley...</p>
+		<div class="hero-text" >
+			<p class="desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ipsum has
+				been
+				the
+				industry's standard dummy text ever since the  1500s, when an unknown printer took a galley...</p>
+		</div>
 		<div class="open-arrow">
 			<a class="open-arrow-title" href="#">Order Now</a>
 			<a class="open-arrow-link" href="">
@@ -112,23 +114,23 @@
 			<div class="col-5" data-aos="flip-left"
 				 data-aos-easing="ease-out-cubic"
 				 data-aos-duration="2000">
-				<img src="./images/delivery.png" alt="deliveryman">
+				<img class="delivery" src="./images/delivery.png" alt="deliveryman">
 			</div>
 			<img class="line" src="./images/svg/line.svg" alt="line">
 		</div>
 	</div>
 </section>
 
-<section id="menu" class="special-menu">
+<section id="special-item" class="special-item">
 	<div class="container">
-		<div class="row menu">
-			<div class="col-6" data-aos="fade-right"
+		<div class="row special-item-menu">
+			<div class="col-6 col-1" data-aos="fade-right"
 				 data-aos-offset="300"
 				 data-aos-easing="ease-in-sine">
 				<img class="menu-img" src="./images/vegetables.png" alt="menu-items">
 			</div>
 
-			<div class="col-6">
+			<div class="col-6 col-2">
 				<h2 class="title">Explore Our Special Items</h2>
 				<p class="desc m-bottom">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 					Lorem Ipsum
@@ -158,7 +160,33 @@
 					centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was
 					popular</p>
 				<h3 class="review-title">Ahmed Hridoy</h3>
-				<img class="review-img" src="./images/stars.png" alt="stars">
+				<fieldset class="rating">
+					<input type="radio" id="star5" name="rating" value="5"/><label class="full" for="star5"
+																				   title="Awesome - 5 stars"></label>
+					<input type="radio" id="star4half" name="rating" value="4 and a half"/><label class="half"
+																								  for="star4half"
+																								  title="Pretty good - 4.5 stars"></label>
+					<input type="radio" id="star4" name="rating" value="4"/><label class="full" for="star4"
+																				   title="Pretty good - 4 stars"></label>
+					<input type="radio" id="star3half" name="rating" value="3 and a half"/><label class="half"
+																								  for="star3half"
+																								  title="Meh - 3.5 stars"></label>
+					<input type="radio" id="star3" name="rating" value="3"/><label class="full" for="star3"
+																				   title="Meh - 3 stars"></label>
+					<input type="radio" id="star2half" name="rating" value="2 and a half"/><label class="half"
+																								  for="star2half"
+																								  title="Kinda bad - 2.5 stars"></label>
+					<input type="radio" id="star2" name="rating" value="2"/><label class="full" for="star2"
+																				   title="Kinda bad - 2 stars"></label>
+					<input type="radio" id="star1half" name="rating" value="1 and a half"/><label class="half"
+																								  for="star1half"
+																								  title="Meh - 1.5 stars"></label>
+					<input type="radio" id="star1" name="rating" value="1"/><label class="full" for="star1"
+																				   title="Sucks big time - 1 star"></label>
+					<input type="radio" id="starhalf" name="rating" value="half"/><label class="half" for="starhalf"
+																						 title="Sucks big time - 0.5 stars"></label>
+				</fieldset>
+				<!--				<img class="review-img" src="./images/stars.png" alt="stars">-->
 			</div>
 			<div class="col-5">
 				<img class="customer-img" src="./images/customers.png" alt="customer">
@@ -171,8 +199,34 @@
 					galley of type and scrambled it to make a type specimen book. It has survived not only five
 					centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was
 					popular</p>
-				<h3 class="review-title">Ahmed Hridoy</h3>
-				<img class="review-img" src="./images/stars.png" alt="stars">
+				<h3 class="review-title">John Smith</h3>
+				<fieldset class="rating">
+					<input type="radio" id="star5" name="rating" value="5"/><label class="full" for="star5"
+																				   title="Awesome - 5 stars"></label>
+					<input type="radio" id="star4half" name="rating" value="4 and a half"/><label class="half"
+																								  for="star4half"
+																								  title="Pretty good - 4.5 stars"></label>
+					<input type="radio" id="star4" name="rating" value="4"/><label class="full" for="star4"
+																				   title="Pretty good - 4 stars"></label>
+					<input type="radio" id="star3half" name="rating" value="3 and a half"/><label class="half"
+																								  for="star3half"
+																								  title="Meh - 3.5 stars"></label>
+					<input type="radio" id="star3" name="rating" value="3"/><label class="full" for="star3"
+																				   title="Meh - 3 stars"></label>
+					<input type="radio" id="star2half" name="rating" value="2 and a half"/><label class="half"
+																								  for="star2half"
+																								  title="Kinda bad - 2.5 stars"></label>
+					<input type="radio" id="star2" name="rating" value="2"/><label class="full" for="star2"
+																				   title="Kinda bad - 2 stars"></label>
+					<input type="radio" id="star1half" name="rating" value="1 and a half"/><label class="half"
+																								  for="star1half"
+																								  title="Meh - 1.5 stars"></label>
+					<input type="radio" id="star1" name="rating" value="1"/><label class="full" for="star1"
+																				   title="Sucks big time - 1 star"></label>
+					<input type="radio" id="starhalf" name="rating" value="half"/><label class="half" for="starhalf"
+																						 title="Sucks big time - 0.5 stars"></label>
+				</fieldset>
+<!--				<img class="review-img" src="./images/stars.png" alt="stars">-->
 			</div>
 			<div class="col-5">
 				<img class="customer-img" src="./images/customers.png" alt="customer">
@@ -185,8 +239,34 @@
 					galley of type and scrambled it to make a type specimen book. It has survived not only five
 					centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was
 					popular</p>
-				<h3 class="review-title">Ahmed Hridoy</h3>
-				<img class="review-img" src="./images/stars.png" alt="stars">
+				<h3 class="review-title">Ilon Mask</h3>
+				<fieldset class="rating">
+					<input type="radio" id="star5" name="rating" value="5"/><label class="full" for="star5"
+																				   title="Awesome - 5 stars"></label>
+					<input type="radio" id="star4half" name="rating" value="4 and a half"/><label class="half"
+																								  for="star4half"
+																								  title="Pretty good - 4.5 stars"></label>
+					<input type="radio" id="star4" name="rating" value="4"/><label class="full" for="star4"
+																				   title="Pretty good - 4 stars"></label>
+					<input type="radio" id="star3half" name="rating" value="3 and a half"/><label class="half"
+																								  for="star3half"
+																								  title="Meh - 3.5 stars"></label>
+					<input type="radio" id="star3" name="rating" value="3"/><label class="full" for="star3"
+																				   title="Meh - 3 stars"></label>
+					<input type="radio" id="star2half" name="rating" value="2 and a half"/><label class="half"
+																								  for="star2half"
+																								  title="Kinda bad - 2.5 stars"></label>
+					<input type="radio" id="star2" name="rating" value="2"/><label class="full" for="star2"
+																				   title="Kinda bad - 2 stars"></label>
+					<input type="radio" id="star1half" name="rating" value="1 and a half"/><label class="half"
+																								  for="star1half"
+																								  title="Meh - 1.5 stars"></label>
+					<input type="radio" id="star1" name="rating" value="1"/><label class="full" for="star1"
+																				   title="Sucks big time - 1 star"></label>
+					<input type="radio" id="starhalf" name="rating" value="half"/><label class="half" for="starhalf"
+																						 title="Sucks big time - 0.5 stars"></label>
+				</fieldset>
+<!--				<img class="review-img" src="./images/stars.png" alt="stars">-->
 			</div>
 			<div class="col-5">
 				<img class="customer-img" src="./images/customers.png" alt="customer">
@@ -199,8 +279,34 @@
 					galley of type and scrambled it to make a type specimen book. It has survived not only five
 					centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was
 					popular</p>
-				<h3 class="review-title">Ahmed Hridoy</h3>
-				<img class="review-img" src="./images/stars.png" alt="stars">
+				<h3 class="review-title">Petr Ivanov</h3>
+				<fieldset class="rating">
+					<input type="radio" id="star5" name="rating" value="5"/><label class="full" for="star5"
+																				   title="Awesome - 5 stars"></label>
+					<input type="radio" id="star4half" name="rating" value="4 and a half"/><label class="half"
+																								  for="star4half"
+																								  title="Pretty good - 4.5 stars"></label>
+					<input type="radio" id="star4" name="rating" value="4"/><label class="full" for="star4"
+																				   title="Pretty good - 4 stars"></label>
+					<input type="radio" id="star3half" name="rating" value="3 and a half"/><label class="half"
+																								  for="star3half"
+																								  title="Meh - 3.5 stars"></label>
+					<input type="radio" id="star3" name="rating" value="3"/><label class="full" for="star3"
+																				   title="Meh - 3 stars"></label>
+					<input type="radio" id="star2half" name="rating" value="2 and a half"/><label class="half"
+																								  for="star2half"
+																								  title="Kinda bad - 2.5 stars"></label>
+					<input type="radio" id="star2" name="rating" value="2"/><label class="full" for="star2"
+																				   title="Kinda bad - 2 stars"></label>
+					<input type="radio" id="star1half" name="rating" value="1 and a half"/><label class="half"
+																								  for="star1half"
+																								  title="Meh - 1.5 stars"></label>
+					<input type="radio" id="star1" name="rating" value="1"/><label class="full" for="star1"
+																				   title="Sucks big time - 1 star"></label>
+					<input type="radio" id="starhalf" name="rating" value="half"/><label class="half" for="starhalf"
+																						 title="Sucks big time - 0.5 stars"></label>
+				</fieldset>
+<!--				<img class="review-img" src="./images/stars.png" alt="stars">-->
 			</div>
 			<div class="col-5">
 				<img class="customer-img" src="./images/customers.png" alt="customer">
@@ -211,15 +317,15 @@
 
 <section class="order">
 	<div class="container">
-		<div class="row">
-			<div class="col-5" data-aos="flip-left"
+		<div class="row order-row">
+			<div class="col-5 col-1" data-aos="flip-left"
 				 data-aos-easing="ease-out-cubic"
 				 data-aos-duration="2000">
 				<div class="mobile">
 					<img class="mobile-img" src="./images/iphone.png" alt="iphone">
 				</div>
 			</div>
-			<div class="col-7">
+			<div class="col-7 col-2">
 				<div class="order-info">
 					<a class="download" href="">Download App</a>
 					<h2 class="title">Simple Way To Order Your Organic Fruit </h2>
@@ -238,38 +344,47 @@
 </section>
 
 <footer class="footer" id="contact">
-	<div class="container footer-container">
+	<div class="container">
+		<div class="row footer-row">
 
-		<div class="footer-logo">
-			<img class="footer-logo-img" src="./images/logo.png" alt="logo">
-			<p class="desc">Lorem Ipsum is simply dummy text of the <br>printing and typesetting industry.
-				Lorem <br>
-				Ipsum has been the industry's standard <br> dummy text ever since the 1500s, when <br> an unknown
-				printer...
-				.</p>
-		</div>
+			<div class="col-4">
+				<a class="logo-link" href="#"><img class="footer-logo-img" src="./images/logo.png" alt="logo"></a>
+				<p class="desc">Lorem Ipsum is simply dummy text of the <br>printing and typesetting industry.
+					Lorem <br>
+					Ipsum has been the industry's standard <br> dummy text ever since the 1500s, when <br> an unknown
+					printer...
+					.</p>
+			</div>
 
-		<div class="footer-about">
-			<h4 class="footer-title">Navigation</h4>
-			<a class="footer-link" href="#">About Us</a>
-			<a class="footer-link" href="#">Service</a>
-			<a class="footer-link" href="#">Menu</a>
-		</div>
-		<div class="footer-about">
-			<h4 class="footer-title">Resources</h4>
-			<a class="footer-link" href="#">Reviews</a>
-			<a class="footer-link" href="#">Blog</a>
-			<a class="footer-link" href="#">Update News</a>
-		</div>
-		<div class="footer-about">
-			<h4 class="footer-title">Contact Us</h4>
-			<a class="footer-link" href="mailto: oyasim@email.com">Email: oyasim@email.com</a>
-			<a class="footer-link-social" href="#"><img src="./images/svg/facebook.svg" alt=""></a>
-			<a class="footer-link-social" href="#"><img src="./images/svg/twitter.svg" alt=""></a>
-			<a class="footer-link-social" href="#"><img src="./images/svg/instagram.svg" alt=""></a>
+			<div class="col-3">
+				<div class="footer-about">
+					<h4 class="footer-title">Navigation</h4>
+					<a class="footer-link" href="#">About Us</a>
+					<a class="footer-link" href="#">Service</a>
+					<a class="footer-link" href="#">Menu</a>
+				</div>
+			</div>
 
-		</div>
+			<div class="col-3">
+				<div class="footer-about">
+					<h4 class="footer-title">Resources</h4>
+					<a class="footer-link" href="#">Reviews</a>
+					<a class="footer-link" href="#">Blog</a>
+					<a class="footer-link" href="#">Update News</a>
+				</div>
+			</div>
 
+			<div class="col-3">
+				<div class="footer-about">
+					<h4 class="footer-title">Contact Us</h4>
+					<a class="footer-link" href="mailto: oyasim@email.com">Email: oyasim@email.com</a>
+					<a class="footer-link-social" href="#"><img src="./images/svg/facebook.svg" alt=""></a>
+					<a class="footer-link-social" href="#"><img src="./images/svg/twitter.svg" alt=""></a>
+					<a class="footer-link-social" href="#"><img src="./images/svg/instagram.svg" alt=""></a>
+				</div>
+
+			</div>
+		</div>
 	</div>
 </footer>
 
