@@ -121,10 +121,6 @@
         padding: 80px 0 84px;
     }
 
-    .single-item {
-        display: flex;
-        flex-flow: wrap;
-    }
 
     .order-row {
         display: flex;
@@ -151,9 +147,7 @@
         padding-right: 0;
     }
 
-    /*.mobile {*/
-    /*    padding-left: 200px;*/
-    /*}*/
+
     .footer {
         padding: 0 0 40px;
     }
@@ -184,11 +178,23 @@
         margin-right: 28px;
     }
 
-    .slick-next {
-        right: 15%;
+
+    .elements {
+        display: block;
     }
 
+    .owl-prev {
+        position: absolute;
+        left: 20%;
+        bottom: -20px;
+    }
 
+    .owl-next {
+        position: absolute;
+        left: 30%;
+        bottom: -20px;
+
+    }
 }
 
 
@@ -255,98 +261,128 @@
     .order {
         padding-bottom: 60px;
     }
-}
 
-
-@media (max-width: 576px) {
-    /*320-576*/
-    .container {
-        width: 319px;
-    }
-
-    .logo-img {
-        width: 40px;
-    }
-    header {
-        padding: 33px 0 34px;
-    }
-
-    .nav-link-reg {
-        font-size: 14px;
-        padding: 2px 12px;
-    }
-
-    .about-benefits {
+    .elements {
         display: block;
     }
 
-    .delivery {
-        max-width: 215%;
-    }
-
-    .title {
-        font-size: 29px;
-        line-height: 40px;
-    }
-
-    .desc {
-        font-size: 15px;
-        line-height: 25px;
-        margin-bottom: 10px;
-    }
-    .arrow-circle {
-        width: 45px;
-        height: 45px
-    }
-    .foliage-img {
+    .owl-prev {
         position: absolute;
-        top: -57px;
-        left: -9px;
+        left: 20%;
+        bottom: -20px;
+        width: 35px;
+        height: 35px;
     }
-    .hero {
-        padding-top: 57px;
+
+    .owl-next {
+        position: absolute;
+        left: 35%;
+        bottom: -20px;
+        width: 35px;
+        height: 35px;
+
     }
-    .mobile-img{
-        max-width: 150px;
+
+    span {
+        font-size: 30px;
     }
-    .footer-logo-img{
-        width: 40px;
-        height: 40px;
+
+
+    @media (max-width: 576px) {
+        /*320-576*/
+        .container {
+            width: 310px;
+            padding: 0 5px;
+        }
+
+        .logo-img {
+            width: 40px;
+        }
+
+        header {
+            padding: 33px 0 34px;
+        }
+
+        .nav-link-reg {
+            font-size: 14px;
+            padding: 2px 12px;
+        }
+
+        .about-benefits {
+            display: block;
+        }
+
+        .delivery {
+            max-width: 215%;
+        }
+
+        .title {
+            font-size: 29px;
+            line-height: 40px;
+        }
+
+        .desc {
+            font-size: 15px;
+            line-height: 25px;
+            margin-bottom: 10px;
+        }
+
+        .arrow-circle {
+            width: 45px;
+            height: 45px
+        }
+
+        .foliage-img {
+            position: absolute;
+            top: -57px;
+            left: -9px;
+        }
+
+        .hero {
+            padding-top: 57px;
+        }
+
+        .mobile-img {
+            max-width: 150px;
+        }
+
+        .footer-logo-img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .download {
+            font-size: 13px;
+        }
+
+        .col-3 {
+            width: 100%;
+        }
+
+        .footer-about {
+            text-align: center;
+        }
+
+        .footer-title {
+            margin-bottom: 16px;
+        }
+
+        .footer-link {
+            margin-bottom: 12px;
+        }
+
+        .benefits-circle {
+            margin-bottom: 10px;
+        }
+
+        .about-benefits {
+            padding: 40px 60px 20px 60px;
+        }
+
+        .review-title {
+            font-size: 18px;
+        }
+
+
     }
-    .download {
-        font-size: 13px;
-    }
-    .col-3{
-        width: 100%;
-    }
-    .footer-about{
-        text-align: center;
-    }
-    .footer-title {
-        margin-bottom: 16px;
-    }
-    .footer-link{
-        margin-bottom: 12px;
-    }
-    .benefits-circle{
-        margin-bottom: 10px;
-    }
-    .about-benefits {
-        padding: 40px 60px 20px 60px;
-    }
-    .review-title{
-        font-size: 18px;
-    }
-    .slick-prev{
-        right: -15%;
-    }
-}
-    .slick-next {
-        right: 5%;
-    }
-    .slick-prev:before, .slick-next:before{
-        font-size: 20px;
-    }
-    .rating > label:before {
-        margin: 1px;
 }

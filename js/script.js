@@ -29,19 +29,19 @@ $(document).ready(function(){
 		merge: false,
 		responsive:{
 			1200:{
-				items:2
+				items:1
 			},
 			992:{
-				items:2
+				items:1
 			},
 			768:{
-				items:2,
+				items:1
 			},
 			576:{
-				items:2
+				items:1
 			},
 			320:{
-				items:2
+				items:1
 			}
 		}
 
