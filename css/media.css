@@ -200,6 +200,13 @@
     .block-1{
         max-width: 100%;
     }
+    .review-title{
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    .stars{
+        text-align: center;
+    }
 }
 
 
@@ -291,6 +298,17 @@
     span {
         font-size: 30px;
     }
+    .review-title{
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    .stars{
+        text-align: center;
+    }
+    .stars-icon{
+        font-size: 25px;
+    }
+}
 
 
     @media (max-width: 576px) {
@@ -387,7 +405,34 @@
         .review-title {
             font-size: 18px;
         }
+        .owl-prev {
+            position: absolute;
+            left: 20%;
+            bottom: -30px;
+            width: 30px;
+            height: 30px;
+        }
 
+        .owl-next {
+            position: absolute;
+            left: 35%;
+            bottom: -30px;
+            width: 30px;
+            height: 30px;
+
+        }
+
+        span {
+            font-size: 30px;
+        }
+        .review-title{
+            text-align: center;
+        }
+        .stars{
+            text-align: center;
+        }
+        .stars-icon{
+            font-size: 20px;
+        }
 
     }
-}

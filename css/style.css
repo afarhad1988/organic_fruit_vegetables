@@ -412,7 +412,6 @@ header {
    bottom: 10px;
     width: 45px;
     height: 45px;
-    border: 1px solid red;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -427,7 +426,6 @@ header {
     bottom: 10px;
     width: 45px;
     height: 45px;
-    border: 1px solid red;
     border-radius: 50%;
     display: flex;
     justify-content: center;
