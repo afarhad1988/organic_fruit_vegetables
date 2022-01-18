@@ -287,6 +287,12 @@ header {
     font-weight: 500;
     margin-bottom: 20px;
 }
+.elements{
+    display: flex;
+}
+.block-1{
+    max-width: 50%;
+}
 .stars{
     font-size: 30px;
 }
@@ -403,7 +409,7 @@ header {
 .owl-prev{
     position: absolute;
     left:20%;
-   bottom: 80px;
+   bottom: 10px;
     width: 45px;
     height: 45px;
     border: 1px solid red;
@@ -418,7 +424,7 @@ header {
 .owl-next{
     position: absolute;
     left:26%;
-    bottom: 80px;
+    bottom: 10px;
     width: 45px;
     height: 45px;
     border: 1px solid red;
@@ -456,6 +462,3 @@ span{
 
 }
 
-.elements{
-    display: flex;
-}
