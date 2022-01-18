@@ -16,58 +16,35 @@ menuLinks.forEach(oneLink => {
 		document.body.classList.remove('o-hidden')
 	})
 })
-// $(document).ready(function(){
-// 	$(".owl-carousel").owlCarousel({
-// 		items:1,
-// 		loop:true,
-// 		center: true
-// 	});
-// });
 
-$('.single-item').slick({
-	infinite: true,
-	dots: false,
-	slidesToShow: 2,
-	slidesToScroll: 2,
-	// responsive: [
-	// 	{
-	// 		breakpoint: 1200,
-	// 		settings: {
-	// 			slidesToShow: 3,
-	// 			slidesToScroll: 3,
-	// 			infinite: true,
-	// 			dots: true
-	// 		}
-	// 	},
-	// 	{
-	// 		breakpoint: 992,
-	// 		settings: {
-	// 			slidesToShow: 2,
-	// 			slidesToScroll: 2
-	// 		}
-	// 	},
-	// 	{
-	// 		breakpoint: 768,
-	// 		settings: {
-	// 			slidesToShow: 2,
-	// 			slidesToScroll: 2
-	// 		}
-	// 	},
-	// 	{
-	// 		breakpoint: 576,
-	// 		settings: {
-	// 			slidesToShow: 1,
-	// 			slidesToScroll: 1
-	// 		}
-	// 	},
-	// 	{
-	// 		breakpoint: 320,
-	// 		settings: {
-	// 			slidesToShow: 1,
-	// 			slidesToScroll: 1
-	// 		}
-	// 	}
-	//
-	// ]
+
+
+
+$(document).ready(function(){
+	$(".owl-carousel").owlCarousel({
+		items:2,
+		dots: true,
+		nav: true,
+		loop: true,
+		merge: false,
+		responsive:{
+			1200:{
+				items:2
+			},
+			992:{
+				items:2
+			},
+			768:{
+				items:2,
+			},
+			576:{
+				items:2
+			},
+			320:{
+				items:2
+			}
+		}
+
+
+	});
 });
-

@@ -287,6 +287,14 @@ header {
     font-weight: 500;
     margin-bottom: 20px;
 }
+.stars{
+    font-size: 30px;
+}
+
+.stars-icon{
+    color: yellow;
+
+}
 .p-right{
     padding-right: 38px;
 }
@@ -330,7 +338,7 @@ header {
 
 }
 .footer{
-    padding: 67px 0 118px;
+    padding: 67px 0 50px;
     background: #FCFEFD;
 
 }
@@ -376,65 +384,7 @@ header {
     color: #09A66D;
 }
 
-.slick-prev:before{
-    color: grey;
-    opacity: 1;
-}
-.slick-prev, .slick-next{
 
-
-}
-.slick-prev{
-    bottom: 0;
-    left: -35%;
-    font-size: 30px;
-}
-.slick-next{
-    bottom: 0;
-    right: 25%;
-    font-size: 30px;
-}
-.slick-next:before {
-    color: grey;
-    opacity: 1;
-}
-
-/*.slick-prev,*/
-/*.slick-next*/
-/*{*/
-/*    font-size: 0;*/
-/*    line-height: 0;*/
-/*    position: absolute;*/
-/*    bottom: 0;*/
-/*    left:0;*/
-/*    right: 0;*/
-/*    margin: auto;*/
-/*    display: block;*/
-/*    width: 20px;*/
-/*    height: 20px;*/
-/*    padding: 0;*/
-/*    -webkit-transform: translate(0, -50%);*/
-/*    -ms-transform: translate(0, -50%);*/
-/*    transform: translate(0, -50%);*/
-/*    cursor: pointer;*/
-/*    color: transparent;*/
-/*    border: none;*/
-/*    outline: none;*/
-/*    background: transparent;*/
-/*    z-index: 10;*/
-/*}*/
-
-.slick-prev:before,
-.slick-next:before {
-    font-size: 40px;
-    line-height: 1;
-    opacity: .75;
-    color: grey;
-}
-.slick-prev:hover:before,
-.slick-next:hover:before{
-    color: #09A66D;
-}
 .burger{
     display: none;
     font-size: 28px;
@@ -443,38 +393,65 @@ header {
 .o-hidden{
     overflow: hidden;
 }
+.button.owl-pre{
 
-.rating {
-    border: none;
-    float: left;
+}
+.owl-nav{
+    position: relative;
 }
 
-.rating > input { display: none; }
-.rating > label:before {
-    margin: 5px;
-    font-size: 1.25em;
-    font-family: FontAwesome;
-    display: inline-block;
-    content: "\f005";
-}
-
-.rating > .half:before {
-    content: "\f089";
+.owl-prev{
     position: absolute;
+    left:20%;
+   bottom: 80px;
+    width: 45px;
+    height: 45px;
+    border: 1px solid red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
 }
 
-.rating > label {
-    color: #ddd;
-    float: right;
+.owl-next{
+    position: absolute;
+    left:26%;
+    bottom: 80px;
+    width: 45px;
+    height: 45px;
+    border: 1px solid red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
 }
 
-/***** CSS Magic to Highlight Stars on Hover *****/
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev {
+    background: white;
+    color: #CCCCCC;
+    border: 1px solid #CCCCCC;
+    padding: 0!important;
+    font: inherit;
 
-.rating > input:checked ~ label, /* show gold star when clicked */
-.rating:not(:checked) > label:hover, /* hover current star */
-.rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+}
 
-.rating > input:checked + label:hover, /* hover current star when changing rating */
-.rating > input:checked ~ label:hover,
-.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
-.rating > input:checked ~ label:hover ~ label { color: #FFED85;  }
+.owl-carousel .owl-nav button.owl-next:hover{
+    background: #09A66D;
+    border:none;
+    color: white;
+}
+
+.owl-carousel .owl-nav button.owl-prev:hover{
+    background: #09A66D;
+    border:none;
+    color: white;
+}
+
+span{
+    font-size: 50px;
+
+}
